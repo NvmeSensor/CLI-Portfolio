@@ -19,7 +19,8 @@ const MainPage = () => {
         case 'ls':
           resultComponent = (
             <div className='output'>
-              <p className="text-xl font-semibold item">Available commands:</p>
+              <p className="text-xl font-semibold item">Welcome to my Portfolio</p>
+              <p className="text-lg">Here are the some commands that you can try:</p>
               <ul className="pl-5">
                 <li>whoami - Show personal information</li>
                 <li>projects - Show projects information</li>
@@ -50,7 +51,7 @@ const MainPage = () => {
         default:
           resultComponent = (
             <div className='output'>
-              <p className="text-xl font-semibold text-red-700">command not found: {inputValue}</p>
+              <p className="text-xl font-semibold itemx">command not found: {inputValue}</p>
             </div>
           );
           break;
@@ -68,7 +69,7 @@ const MainPage = () => {
     <div className='flex flex-col justify-start items-start px-5 py-2 gap-5 w-full min-h-screen main bg-black font-mono'>
       {history.map((item, index) => (
         <div key={index} className='w-full'>
-          <p className='font-medium text-md text-red-700'>{item.command}</p>
+          <p className='font-medium text-md itemx'>{item.command}</p>
           <div className='mt-3'>{item.result}</div>
         </div>
       ))}
