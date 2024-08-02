@@ -42,7 +42,7 @@ const Projects = () => {
 
   return (
     <div className='flex flex-col justify-start items-start gap-2'>
-    <p className='text-md'>
+    <p className='text-xl'>
     {`Here are some of the projects I have worked on:`}
     </p>
     <div className='flex flex-col justify-start items-start gap-2'>

@@ -12,13 +12,14 @@ const MainPage = () => {
   const handleCommand = (e) => {
     if (e.key === 'Enter') {
       e.preventDefault();
+      const command = inputValue.trim().toLowerCase();
       let resultComponent;
 
-      switch (inputValue.trim()) {
+      switch (command) {
         case 'ls':
           resultComponent = (
             <div className='output'>
-              <p className="text-xl font-semibold text-cyan-700">Available commands:</p>
+              <p className="text-xl font-semibold item">Available commands:</p>
               <ul className="pl-5">
                 <li>whoami - Show personal information</li>
                 <li>projects - Show projects information</li>
@@ -45,11 +46,11 @@ const MainPage = () => {
         case 'clear':
           setHistory([]);
           setInputValue('');
-          return; // Skip adding to history
+          return;
         default:
           resultComponent = (
             <div className='output'>
-              <p className="text-xl font-semibold text-cyan-700">command not found: {inputValue}</p>
+              <p className="text-xl font-semibold text-red-700">command not found: {inputValue}</p>
             </div>
           );
           break;
@@ -67,7 +68,7 @@ const MainPage = () => {
     <div className='flex flex-col justify-start items-start px-5 py-2 gap-5 w-full min-h-screen main bg-black font-mono'>
       {history.map((item, index) => (
         <div key={index} className='w-full'>
-          <p className='font-medium text-md'>{item.command}</p>
+          <p className='font-medium text-md text-red-700'>{item.command}</p>
           <div className='mt-3'>{item.result}</div>
         </div>
       ))}

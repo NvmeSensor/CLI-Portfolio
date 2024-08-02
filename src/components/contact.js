@@ -4,7 +4,7 @@ import Link from "next/link";
 const ConnectWithMe = () => {
   return (
     <div className="flex flex-col justify-start items-start">
-      <p className="text-lg font-medium">
+      <p className="text-xl font-medium">
         {`You can connect with me on the following platforms:`}
       </p>
       <ul className="text-md">
