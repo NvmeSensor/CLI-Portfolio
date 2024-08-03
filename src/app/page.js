@@ -1,4 +1,4 @@
-import MainPage from '@/components/main'
+import MainPage from '@/components/Main'
 import React from 'react'
 
 const HomePage = () => {

@@ -28,28 +28,28 @@ const Skills = () => {
         {`As a MERN stack developer, I have experience in the following technologies:`}
       </p>
       <div className="flex flex-col justify-start items-start gap-2 mt-2">
-        <p className="text-lg font-semibold text-green-700">{`Frontend`}</p>
+        <p className="text-lg font-medium text-green-700">{`Frontend`}</p>
         <ul className="text-md">
           {frontend.map((skill, index) => (
             <li key={index}>{skill}</li>
           ))}
         </ul>
 
-        <p className="text-lg font-semibold text-green-700">{`Backend`}</p>
+        <p className="text-lg font-medium text-green-700">{`Backend`}</p>
         <ul className="text-md">
           {backend.map((skill, index) => (
             <li key={index}>{skill}</li>
           ))}
         </ul>
 
-        <p className="text-lg font-semibold text-green-700">{`Tools`}</p>
+        <p className="text-lg font-medium text-green-700">{`Tools`}</p>
         <ul className="text-md">
           {tools.map((skill, index) => (
             <li key={index}>{skill}</li>
           ))}
         </ul>
 
-        <p className="text-lg font-semibold text-green-700">
+        <p className="text-lg font-medium text-green-700">
           {`Operating Systems`}
         </p>
         <ul className="text-md">
@@ -58,7 +58,7 @@ const Skills = () => {
           ))}
         </ul>
 
-        <p className="text-lg font-semibold text-green-700">{`Languages`}</p>
+        <p className="text-lg font-medium text-green-700">{`Languages`}</p>
         <ul className="text-md">
           {languages.map((skill, index) => (
             <li key={index}>{skill}</li>

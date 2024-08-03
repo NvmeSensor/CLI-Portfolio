@@ -1,9 +1,9 @@
 'use client'
 import React, { useState } from 'react';
-import About from './about';
-import Skills from './skills';
+import About from './About';
+import Skills from './Skills';
 import Projects from './Projects';
-import ConnectWithMe from './contact';
+import ConnectWithMe from './Contact';
 
 const MainPage = () => {
   const [inputValue, setInputValue] = useState('');
@@ -19,7 +19,7 @@ const MainPage = () => {
         case 'ls':
           resultComponent = (
             <div className='output'>
-              <p className="text-xl font-semibold item">Welcome to my Portfolio</p>
+              <p className="text-xl font-medium item">Welcome to my Portfolio</p>
               <p className="text-lg">Here are the some commands that you can try:</p>
               <ul className="pl-5">
                 <li>whoami - Show personal information</li>
@@ -51,7 +51,7 @@ const MainPage = () => {
         default:
           resultComponent = (
             <div className='output'>
-              <p className="text-xl font-semibold itemx">command not found: {inputValue}</p>
+              <p className="text-xl font-medium itemx">command not found: {inputValue}</p>
             </div>
           );
           break;
@@ -69,7 +69,7 @@ const MainPage = () => {
     <div className='flex flex-col justify-start items-start px-5 py-2 gap-5 w-full min-h-screen main bg-black font-mono'>
       {history.map((item, index) => (
         <div key={index} className='w-full'>
-          <p className='font-medium text-md itemx'>{item.command}</p>
+          <p className='font-medium text-lg itemx'>{item.command}</p>
           <div className='mt-3'>{item.result}</div>
         </div>
       ))}

@@ -14,3 +14,18 @@ body{
 .itemx{
     color: #AA0000;
 }
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #212121;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #272727;
+    border-radius: 8px;
+    border: 2px solid transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #252525;
+}

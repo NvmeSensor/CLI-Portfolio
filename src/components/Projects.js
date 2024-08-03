@@ -48,7 +48,7 @@ const Projects = () => {
     <div className='flex flex-col justify-start items-start gap-2'>
         {projexts.map((project, index) => (
             <div key={index} className='flex flex-col justify-start items-start'>
-                <Link href={project.demo} className='text-lg font-semibold underline text-green-700'>{project.name}</Link>
+                <Link href={project.demo} className='text-lg font-medium underline text-green-700'>{project.name}</Link>
                 <p className='text-md'>{project.description} made using {project.stack}</p>
             </div>
         ))}
